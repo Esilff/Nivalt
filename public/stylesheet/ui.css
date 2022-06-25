@@ -1,0 +1,69 @@
+* {margin: 0; padding: 0;}
+
+:root {
+    --text-color : white;
+    --main-color: #262729;
+    --second-color: #30333b;
+    --third-color: #494e5c;
+}
+
+#flex-layout {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#options {
+    width: 100%;
+    height: 3vh;
+    background-color: var(--main-color);
+}
+
+#sub-layout {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+#scenery {
+    height: 100%;
+    width: 20vw;
+    background-color: var(--second-color);
+}
+
+#canvas {
+    flex-grow: 1;
+    background-color: black;
+}
+
+#object {
+    height: 100%;
+    width: 25vw;
+    background-color: var(--second-color);
+}
+
+#io {
+    width: 100%;
+    height: 37vh;
+    background-color: #494e5c;
+}
+
+#io #path {
+    width: 100%;
+    height:8%;
+    background-color: var(--main-color);
+}
+
+
+
+#io #files {
+    width: 100%;
+    height: 87%;
+}
+
+#io #io-options {
+    width: 100%;
+    height:5%;
+    background-color: #30333b;
+}

@@ -8,6 +8,7 @@ const dotenv_1 = __importDefault(require("dotenv"));
 dotenv_1.default.config();
 const app = (0, express_1.default)();
 const port = process.env.PORT;
+app.use('/', express_1.default.static('./public'));
 app.get('/', (req, res) => {
     res.send('Express + Typescript Server');
 });

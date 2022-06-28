@@ -11,3 +11,5 @@ async function readFile(path : string) : Promise<string>{
         return '';
     }
 } 
+
+module.exports = {readFile};

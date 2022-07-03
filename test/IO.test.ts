@@ -1,7 +1,7 @@
 const IO = require('../src/engine/fileSystem/IO');
 
 
-test('IO : Get file content', () => {
+test('IO : Read file content',async () => {
     const expectedContent = `#stage vertex
 
     attribute vec4 aVertexPostion;
@@ -18,5 +18,7 @@ test('IO : Get file content', () => {
     void main() {
         gl_FragColor = vec4(1.0,1.0,1.0,1.0);
     }`
-    expect(IO.readFile('./assets/color.glsl')).toBe(expectedContent);
+    let result : string = '';
+    await IO.readFile('/assets/color.glsl').then((out : string) => result = out);
+    expect(result).toBe(expectedContent);
 });

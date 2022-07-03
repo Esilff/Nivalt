@@ -8,8 +8,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
-const fs = require('fs');
-const path = require('path');
+const fs = require('fs.promises');
 function readFile(path) {
     return __awaiter(this, void 0, void 0, function* () {
         try {
@@ -20,7 +19,7 @@ function readFile(path) {
         }
         catch (error) {
             console.error(error);
-            return '';
+            return null;
         }
     });
 }

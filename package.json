@@ -34,5 +34,8 @@
     "nodemon": "^2.0.18",
     "ts-jest": "^28.0.5",
     "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "fs.promises": "^0.1.2"
   }
 }
